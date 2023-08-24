@@ -10,13 +10,13 @@ const Myprofile = () => {
   const [allMsg, setAllMsg] = useState([]);
   const [newMsg, setNewMsg] = useState('');
   useEffect(() => {
-    axios.get('http://localhost:5000/myprofile',{
+    axios.get('https://chatmania-backend.onrender.com/myprofile',{
       headers: {
         'x-token': token
       }
     } ).then(res=>setData(res.data)).catch(err=>console.log(err))
 
-    axios.get('http://localhost:5000/getmsg',{
+    axios.get('https://chatmania-backend.onrender.com/getmsg',{
       headers: {
         'x-token': token
       }
@@ -24,7 +24,7 @@ const Myprofile = () => {
   })
 const submitHandler = (e)=>{
   e.preventDefault();
-  axios.post('http://localhost:5000/addmsg', {text: newMsg},{
+  axios.post('https://chatmania-backend.onrender.com/addmsg', {text: newMsg},{
       headers: {
         'x-token': token
       }

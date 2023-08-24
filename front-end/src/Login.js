@@ -18,7 +18,7 @@ const Login = () => {
     const submitHandler = (e)=>{
         e.preventDefault();
         console.log('initiated')
-        axios.post('http://localhost:5000/login', data).then(
+        axios.post('https://chatmania-backend.onrender.com/login', data).then(
             res => setToken(res.data.token)
         );
     }
