@@ -7,11 +7,7 @@ const middleware = require('./middleware')
 const cors = require('cors')
 const app = express()
 app.use(express.json());
-app.use(cors({
-    origin: [""],
-    methods: ["POST","GET"],
-    crediantials: true
-}))
+app.use(cors({origin: "*"}))
 
 app.post('/register', async (req, res)=>{
     try {

@@ -3,7 +3,6 @@ import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import './Register.css'
-axios.defaults.withCredentials = true;
 const Register = () => {
     const [data, setData] = useState({
         username: '',
