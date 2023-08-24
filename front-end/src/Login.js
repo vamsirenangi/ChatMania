@@ -4,6 +4,7 @@ import {store} from './App'
 import {useNavigate} from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import './Login.css'
+axios.defaults.withCredentials = true;
 
 const Login = () => {
     let navigate = useNavigate();

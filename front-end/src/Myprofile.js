@@ -3,6 +3,7 @@ import {store} from './App'
 import {Navigate} from 'react-router-dom'
 import axios from 'axios'
 import Moment from 'react-moment'
+axios.defaults.withCredentials = true;
 
 const Myprofile = () => {
   const [token, setToken] = useContext(store)
