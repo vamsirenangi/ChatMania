@@ -1,0 +1,29 @@
+*{
+    text-decoration: none;
+}
+
+.whole-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+button{
+    background-color: black; 
+    width: 75px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 5px;
+    margin:  5px 15px;
+    cursor: pointer;
+}
+button p{
+    color: white; 
+    font-weight: bold; 
+    font-size: 13px;
+}
