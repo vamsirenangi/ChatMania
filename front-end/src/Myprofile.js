@@ -46,7 +46,7 @@ const submitHandler = (e)=>{
                           allMsg.map((message)=>(
                             <div class='card'  >
                               <div class='card-body' >
-                                <h5 class='card-title' >{message.username}  <Moment style={{'font-size':'11px'}} format='yy:mm:DD hh:mm:ss'>{message.date}</Moment></h5>
+                                <h5 class='card-title' >{message.username}  <Moment style={{'font-size':'11px'}} format='YYYY:MM:DD hh:mm:ss'>{message.date}</Moment></h5>
                                 <p>{message.text}</p>
                               </div>
                             </div>
